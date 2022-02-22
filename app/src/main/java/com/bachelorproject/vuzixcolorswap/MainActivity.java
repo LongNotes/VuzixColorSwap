@@ -46,7 +46,7 @@ public class MainActivity extends ActionMenuActivity {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if(ev.getAction() == MotionEvent.ACTION_DOWN)
             switchColor();
-        return super.dispatchTouchEvent(ev);
+        return false;
     }
 
     @Override
